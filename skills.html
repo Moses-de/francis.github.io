@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body class="skills">
+    <div class="btn-box">
+        <a href="Background.html" class="btn">Home Page</a>
+    </div>
+    <img name="slide" id="slide">
+    <div>
+        <p>Am a front-end and back end developer. Am able to manipulate the server and make use of java programming language
+            .I have an experience of one year as a developer and am working to perfect my skills in the field of development  </p>
+    </div>
+      <h1>
+        My skills include :
+      </h1>
+    <h3 class="come">
+        <ul class="coming">
+
+       <li> <span class="word">Frontend Developer <br></span></li>
+      <li>  <span class="word">Graphic Designer </span></li>
+        <li><span class="word"> Software Engineering </span></li>
+       <li> <span class="word">Freelancer </span></li>
+    </h3>
+    <script>
+        var i=0;
+        var image=[];
+        var time=3000;
+        image[0]='java1.jfif';
+        image[1]="java2.png";
+        image[2]="java3.jfif";
+        const changeImg=()=>{
+            document.slide.src=image[i];
+            if(i<image.length-1){
+                i++;
+            }else{
+                i=0;
+            }
+            setTimeout("changeImg()",time);
+        }
+        window.onload=changeImg;
+    </script>
+    
+   
+</body>
+</html>

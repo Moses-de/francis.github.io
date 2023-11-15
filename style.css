@@ -1,0 +1,238 @@
+@import url(https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    ---text-color:#f5f5f5 ;
+    ---hover-color:#12f7ff;
+    ---bg-color:#250521;
+    ---secon-bg-color:#292e33;
+    ---big-font:2,5rem;
+    ---normal-font:2rem;
+    ---neon-box-shadow:0 0 .5rem #12f7ff;
+    ---h2-font:3rem;
+    ---font-neon-shadow:0 0 10px rgba(18,247,255,0,3);
+}
+body{
+    font-family: "Poppins" sans-serif;
+    background-color: var(---bg-color);
+    color: var(---text-color);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 100%;
+    padding: 20px 10px;
+}
+.logo{
+font-size: 28px;
+font-weight: 700;
+letter-spacing: 1px;
+}
+span{
+    color: var(---hover-color);
+}
+.navlist{
+display: flex;
+}
+.navlist a{
+    width: 30px;
+    color: var(---text-color);
+    font-weight: 500;
+    padding: 20px 10px;
+}
+.navlist a:hover{
+    color: var(---hover-color);
+}
+.achieve{
+    text-decoration: none;
+}
+section{
+    padding: 100px 10px;
+}
+.home{
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;  
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center; */
+    grid-gap:4em; 
+   
+}
+.home-content{
+    max-height: 600;
+}
+.home-content h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.change-text{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.change-text h3{
+    display: inline-flex;
+    margin: 0;
+    vertical-align: top;
+}
+
+/* .change-text h3 .word{
+   position: absolute;
+   display: flex;
+   
+} */
+img{
+
+    width: 200px;
+}
+
+.come {
+    color: hsl(0, 0%, 28%);
+    font-size: var(---big-font);
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing:1px;
+    cursor: pointer;
+  }
+  
+  .come span {
+    transition: 0.5s ease-out;
+  }
+  .come span:hover:nth-child(1) {
+    margin-right: 10px;
+  }
+  .come span:hover:nth-child(1):after {
+    content: "'";
+  }
+  .come span:hover:nth-child(2) {
+    margin-left: 30px;
+  }
+  .come span:hover  {
+    color: hwb(0 9% 8%);
+    text-shadow: 0 0 10px #66eb0e, 0 0 20px #3226e4, 0 0 40px #d30ea9;
+  }
+
+  .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    height: 45px;
+  }
+  .btn-box a.btn {
+    margin-top: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height:100% ;
+    background: var(---hover-color);
+    color: var(---bg-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: .6s;
+    box-shadow: var(---neon-box-shadow);
+    border-radius: 5px;
+    position: relative;overflow: hidden;
+    z-index: 1 ;
+}
+a.btn:hover{
+    color: var(---hover-color);
+}
+a.btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(---bg-color);
+    height: 100%;
+    z-index: -1;
+    transition:.4s;
+}
+a.btn:hover::before{
+    width: 100%;
+}
+.social-icons{
+
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    height: 40px;
+}
+.social-icons a{
+    display: inline-flex;
+    width:200px;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    background: var(---bg-color);
+    color: var(---hover-color);
+    box-shadow: 0 0 0.8rem #12f7ff;
+    border-radius: 5px;
+    position:relative;
+    z-index: 1;
+    overflow: hidden;
+    font-size: 1.5rem;
+}
+.social-icons a:hover{
+    color: var(---bg-color);
+}
+.social-icons a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: var(---hover-color);
+    transition: .6s;
+    color: var(---hover-color);
+    z-index: 1;
+}
+.social-icons a:hover ::before{
+    width: 100%;
+}  
+.home-image{
+    position: relative;
+}          
+.img-box{
+    text-align: center;
+    width: 100px;
+    
+}
+#Contact{
+    font-size: 70px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+/* about section */
+
+.about{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2em;
+    background: var(---secon-bg-color\);
+}
+.about.img-about{
+    position: relative;
+    text-align: center;
+}
+.about.img-about img{
+    max-width: 400px;
+    height: auto;
+}
+
